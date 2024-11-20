@@ -56,8 +56,34 @@ int main(){
     for (int x : v3){
         cout << x << " ";
     }
-    
+    cout<<endl;
 
-    
+    vector <int> test;
+    test = v3;
 
+    for (int x : test){
+        cout << x << " ";
+    }
+    cout<<endl;
+
+    auto f = test.begin()+1;
+    test.erase(f);
+
+    test.insert(test.end(),100);
+    for (int x : test){
+        cout << x << " ";
+    }
+    cout<<endl;
+
+    reverse(test.begin(), test.end());              //reverse takes pointers as parameters
+    for (int x : test){
+        cout << x << " ";
+    }
+    cout<<endl;
+
+    swap(test[1], test[3]);             //Swap takes varibles as parameters
+    for (int x : test){
+        cout << x << " ";
+    }
+    cout<<endl;
 }
