@@ -86,4 +86,31 @@ int main(){
         cout << x << " ";
     }
     cout<<endl;
+
+    vector <int> test2 = {test[0]};
+    for (int x : test2){
+        cout << x << " ";
+    }
+    cout<<endl;
+
+    // Majority Element 2
+    vector <int> test3 = {2,1,5,5,5,5,6,6,6,6,6,6};
+    vector <int> test3_1;
+    // for(int i=0; i< test3.size(); i++){
+    //     cout<< count
+    // }
+    sort(test3.begin(),test3.end());
+    
+
+    // Using remove() with Vector pop_back()
+    // The remove() function shift an element that have to be remove to the end of vector. 
+    //The last element is then deleted by vector pop_back() method.
+    
+    
+    // Stock Buy and Sell – Multiple Transaction Allowed
+    vector <int> test4 = {2,5,6,7,62};
+    cout<< test4.back()<<endl;
+    test4.pop_back();
+    cout<< *max_element(test4.begin(),test4.end())<<endl;
+    
 }
